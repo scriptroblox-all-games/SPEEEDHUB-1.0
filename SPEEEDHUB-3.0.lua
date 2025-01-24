@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "SPEEEDHUB 1.80",
+   Name = "SPEEEDHUB Green",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "SPEEEDHUB 1.0",
    LoadingSubtitle = "by jorik-rb",
@@ -34,10 +34,22 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Section = Tab:CreateSection("Speed")
+local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
 
 local Slider = PlayerTab:CreateSlider({
-    Name = "Speed length",
+    Name = "WalkSpeed",
+    Range = {1, 10},
+    Increment = 1,
+    Suffix = "Speed",
+    CurrentValue = 10,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+     game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier", Value)
+    end,
+ })
+
+local Slider = PlayerTab:CreateSlider({
+    Name = "Dash length",
     Range = {10, 1000},
     Increment = 1,
     Suffix = "Length",
