@@ -34,10 +34,10 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+local PlayerTab = Window:CreateTab("Игрок", 4483362458) -- Title, Image
 
 local Slider = PlayerTab:CreateSlider({
-    Name = "WalkSpeed",
+    Name = "Скорость",
     Range = {1, 10000},
     Increment = 1,
     Suffix = "Speed",
@@ -49,7 +49,7 @@ local Slider = PlayerTab:CreateSlider({
  })
 
 local Slider = PlayerTab:CreateSlider({
-    Name = "Dash length",
+    Name = "Мдти",
     Range = {10, 1000},
     Increment = 1,
     Suffix = "Length",
@@ -61,7 +61,7 @@ local Slider = PlayerTab:CreateSlider({
  })
 
 local Slider = PlayerTab:CreateSlider({
-    Name = "Jump Height",
+    Name = "Прыжок скорость",
     Range = {10, 500},
     Increment = 1,
     Suffix = "Height",
@@ -71,12 +71,3 @@ local Slider = PlayerTab:CreateSlider({
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end,
  })
-
-local ToolsTab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
-
-local Button = ScriptsTab:CreateButton({
-   Name = "Troll",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptroblox-all-games/SPEEEDHUB-1.0/refs/heads/main/Troll.lua"))()
-   end,
-})
