@@ -1,9 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "SPEEEDHUB Green",
+   Name = "felehun Green",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "SPEEEDHUB 1.0",
+   LoadingTitle = "felehub 1.0",
    LoadingSubtitle = "by jorik-rb",
    Theme = "Green", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -71,3 +71,26 @@ local Slider = PlayerTab:CreateSlider({
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end,
  })
+
+local PlayerTab = Window:CreateTab("Tools", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Universal BTools",
+   Callback = function()
+   loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+   end,
+
+      local Button = Tab:CreateButton({
+   Name = "F3X",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))()
+   end,
+})
+})
+
+local Button = Tab:CreateButton({
+   Name = "EXP",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/DevArilis/roblox/main/Jailbird.lua', true))()
+   end,
+})
