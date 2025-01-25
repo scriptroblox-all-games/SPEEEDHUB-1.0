@@ -74,15 +74,15 @@ local Slider = PlayerTab:CreateSlider({
 
 local ToolsTab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
 
-local Button = Tab:CreateButton({
+local Button = ScriptsTab:CreateButton({
    Name = "EXP",
    Callback = function()
  loadstring(game:HttpGet('https://raw.githubusercontent.com/DevArilis/roblox/main/Jailbird.lua', true))()
    end,
 })
 
-local Button = Tab:CreateButton({
-   Name = "Button Example",
+local Button = ScriptsTab:CreateButton({
+   Name = "Id Place",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/placeidcopier"))()
    end,
