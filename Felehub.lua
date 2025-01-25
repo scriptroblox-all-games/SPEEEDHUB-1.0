@@ -79,14 +79,9 @@ local Button = Tab:CreateButton({
    Callback = function(b)
  b = loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
    end,
+})
+})
 
-      local Button = Tab:CreateButton({
-   Name = "F3X",
-   Callback = function(f)
-  f = loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))()
-   end,
-})
-})
 
 local Button = Tab:CreateButton({
    Name = "EXP",
