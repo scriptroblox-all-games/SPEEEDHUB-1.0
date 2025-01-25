@@ -72,7 +72,7 @@ local Slider = PlayerTab:CreateSlider({
     end,
  })
 
-local PlayerTab = Window:CreateTab("Tools", 4483362458) -- Title, Image
+local ToolsTab = Window:CreateTab("Tools", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
    Name = "Universal BTools",
