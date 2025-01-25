@@ -75,7 +75,7 @@ local Slider = PlayerTab:CreateSlider({
 local ToolsTab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
 
 local Button = ScriptsTab:CreateButton({
-   Name = "Id Place",
+   Name = "Troll",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptroblox-all-games/SPEEEDHUB-1.0/refs/heads/main/Troll.lua"))()
    end,
