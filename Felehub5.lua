@@ -76,14 +76,14 @@ local ToolsTab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
    Name = "EXP",
-   Callback = function(j)
- j = loadstring(game:HttpGet('https://raw.githubusercontent.com/DevArilis/roblox/main/Jailbird.lua', true))()
+   Callback = function()
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/DevArilis/roblox/main/Jailbird.lua', true))()
    end,
 })
 
 local Button = Tab:CreateButton({
    Name = "Button Example",
-   Callback = function(v)
-   v = loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/placeidcopier"))()
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/placeidcopier"))()
    end,
 })
