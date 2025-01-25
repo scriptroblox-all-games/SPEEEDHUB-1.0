@@ -36,7 +36,7 @@ local Window = Rayfield:CreateWindow({
 
 local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
 
-local Slider = PlayerTab:CreateSlider({
+local Slider12 = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
     Range = {1, 10000},
     Increment = 1,
@@ -48,7 +48,7 @@ local Slider = PlayerTab:CreateSlider({
     end,
  })
 
-local Slider = PlayerTab:CreateSlider({
+local Slider1 = PlayerTab:CreateSlider({
     Name = "Dash length",
     Range = {10, 1000},
     Increment = 1,
@@ -60,7 +60,7 @@ local Slider = PlayerTab:CreateSlider({
     end,
  })
 
-local Slider = PlayerTab:CreateSlider({
+local Slider55 = PlayerTab:CreateSlider({
     Name = "Jump Height",
     Range = {10, 500},
     Increment = 1,
@@ -74,13 +74,13 @@ local Slider = PlayerTab:CreateSlider({
 
 local ToolsTab = Window:CreateTab("Tools", 4483362458) -- Title, Image
 
-local Button = Tab:CreateButton({
+local Button1 = Tab:CreateButton({
    Name = "Universal BTools",
    Callback = function()
    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
    end,
 
-      local Button = Tab:CreateButton({
+      local Button44 = Tab:CreateButton({
    Name = "F3X",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))()
@@ -88,7 +88,7 @@ local Button = Tab:CreateButton({
 })
 })
 
-local Button = Tab:CreateButton({
+local Button22 = Tab:CreateButton({
    Name = "EXP",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/DevArilis/roblox/main/Jailbird.lua', true))()
