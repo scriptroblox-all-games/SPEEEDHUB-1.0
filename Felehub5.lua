@@ -72,20 +72,18 @@ local Slider = PlayerTab:CreateSlider({
     end,
  })
 
-local ToolsTab = Window:CreateTab("Tools", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Universal BTools",
-   Callback = function(b)
- b = loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
-   end,
-})
-})
-
+local ToolsTab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
    Name = "EXP",
    Callback = function(j)
  j = loadstring(game:HttpGet('https://raw.githubusercontent.com/DevArilis/roblox/main/Jailbird.lua', true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function(v)
+   v = loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/placeidcopier"))()
    end,
 })
